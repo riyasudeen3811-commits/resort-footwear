@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initMobileNav();
   initScrollReveal();
   initParallax();
+  initFloatingButtons();
 });
 
 /* --- Header scroll effect --- */
@@ -145,4 +146,23 @@ function scrollToElement(selector) {
   if (el) {
     el.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
+}
+
+/* --- Floating Action Buttons (Scroll-triggered luxury entrance) --- */
+function initFloatingButtons() {
+  const floatingBtns = document.querySelector('.floating-buttons');
+  if (!floatingBtns) return;
+
+  const scrollThreshold = 100;
+
+  function handleFloating() {
+    if (window.scrollY > scrollThreshold) {
+      floatingBtns.classList.add('floating-buttons--visible');
+    } else {
+      floatingBtns.classList.remove('floating-buttons--visible');
+    }
+  }
+
+  window.addEventListener('scroll', handleFloating, { passive: true });
+  handleFloating(); // initial check
 }
