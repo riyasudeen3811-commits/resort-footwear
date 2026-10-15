@@ -42,7 +42,7 @@
   <nav class="nav-mobile" id="nav-mobile" aria-label="Mobile navigation">
     <a href="index.html" class="nav-mobile__link">Home</a>
     <a href="about.html" class="nav-mobile__link">About Us</a>
-    <a href="services.html" class="nav-mobile__link">Services</a>
+    <a href="services.html" class="nav-mobile__link nav-mobile__link--active">Services</a>
     <a href="contact.html" class="nav-mobile__link">Contact</a>
     <div class="nav-mobile__contact">
       <a href="tel:+918903512786" class="btn btn--outline" style="font-size: 0.75rem; padding: 10px 20px;">
@@ -58,10 +58,10 @@
 
   <!-- ========== HERO ========== -->
   <section class="hero hero--medium" id="hero-services">
-    <img src="hero-cabins.jpg" alt="Elevated cabins along green hillside at Luxury Farm House" class="hero__image" loading="eager">
+    <img src="original-cabins-panoramic.jpg" alt="Elevated hillside cabins at Luxury Farm House, Poombarai" class="hero__image" loading="eager">
     <div class="hero__overlay"></div>
     <div class="hero__content">
-      <p class="hero__label">Services</p>
+      <p class="hero__label">Services & Experiences</p>
       <h1 class="hero__title">Experience the Hills<br>Differently</h1>
       <p class="hero__subtitle">Explore the property and discover what makes this mountain setting distinctive.</p>
     </div>
@@ -83,41 +83,103 @@
         <!-- Cabin Stay Card -->
         <div class="service-card reveal reveal-delay-1">
           <div class="service-card__image">
-            <img src="cabin-detail.jpg" alt="Individual elevated cabin with panoramic views" loading="lazy">
+            <img src="original-cabins-valley.jpg" alt="Elevated stilt cabin perched above the mountain hillside" loading="lazy">
           </div>
           <div class="service-card__body">
-            <h3 class="service-card__title">Elevated Cabin Stay</h3>
-            <p class="service-card__text">Individual cabins raised above the hillside, each with its own balcony and views of the surrounding mountain landscape. The elevated design offers a sense of seclusion and connection to nature.</p>
+            <div class="service-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/>
+            </svg>
+          </div>
+          <h3 class="service-card__title">Elevated Cabin Stay</h3>
+          <p class="service-card__text">Individual cabins raised above the hillside, each with its own balcony and views of the surrounding mountain landscape. The elevated design offers a sense of seclusion and connection to nature.</p>
+          <ul class="service-card__features">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Private wooden viewing deck
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Stilt elevation over green slopes
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Panoramic glass front windows
+            </li>
+          </ul>
+          <div style="margin-top: auto;">
             <a href="https://wa.me/918903512786?text=Hello%2C%20I%20am%20interested%20in%20the%20elevated%20cabin%20stay%20at%20Luxury%20Farm%20House.%20Could%20you%20share%20availability%20and%20rates%3F" class="btn btn--green" id="btn-service-cabin" target="_blank" rel="noopener">
               <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
               Enquire Now
             </a>
           </div>
         </div>
+      </div>
 
         <!-- Mountain Views Card -->
         <div class="service-card reveal reveal-delay-2">
           <div class="service-card__image">
-            <img src="valley-view.jpg" alt="Panoramic mountain and valley views from the property" loading="lazy">
+            <img src="original-mountain-mist-clean.jpg" alt="Atmospheric mountain views and morning mist across the Poombarai valley" loading="lazy">
           </div>
           <div class="service-card__body">
-            <h3 class="service-card__title">Mountain & Valley Views</h3>
-            <p class="service-card__text">The property's position on the hillside means every cabin enjoys sweeping views of the Poombarai valley, rolling mountains and dramatic skies — whether from your balcony or through large cabin windows.</p>
+            <div class="service-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M8 3l4 8 5-5 5 15H2L8 3z"/>
+            </svg>
+          </div>
+          <h3 class="service-card__title">Mountain & Valley Views</h3>
+          <p class="service-card__text">The property's position on the hillside means every cabin enjoys sweeping views of the Poombarai valley, rolling mountains and dramatic skies — whether from your balcony or through large cabin windows.</p>
+          <ul class="service-card__features">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Western Ghats mountain panorama
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Morning mist & rolling clouds
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Unobstructed natural sunrise
+            </li>
+          </ul>
+          <div style="margin-top: auto;">
             <a href="https://wa.me/918903512786?text=Hello%2C%20I%20would%20like%20to%20know%20more%20about%20the%20mountain%20view%20cabins%20at%20Luxury%20Farm%20House." class="btn btn--green" id="btn-service-views" target="_blank" rel="noopener">
               <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
               Enquire Now
             </a>
           </div>
         </div>
+      </div>
 
         <!-- Nature Experience Card -->
         <div class="service-card reveal reveal-delay-3">
           <div class="service-card__image">
-            <img src="nature-trail.jpg" alt="Nature trails and lush gardens around the property" loading="lazy">
+            <img src="original-cabins-lamps.jpg" alt="Illuminated stone path and peaceful evening ambience at Luxury Farm House" loading="lazy">
           </div>
           <div class="service-card__body">
-            <h3 class="service-card__title">Nature & Surroundings</h3>
-            <p class="service-card__text">The property grounds are set within the natural vegetation of the hillside, with walking paths and landscaped surroundings. The Poombarai region offers scenic natural beauty and a peaceful mountain atmosphere.</p>
+            <div class="service-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            </svg>
+          </div>
+          <h3 class="service-card__title">Nature & Surroundings</h3>
+          <p class="service-card__text">The property grounds are set within the natural vegetation of the hillside, with walking paths and landscaped surroundings. The Poombarai region offers scenic natural beauty and a peaceful mountain atmosphere.</p>
+          <ul class="service-card__features">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Stone hillside pathways
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Lush mountain vegetation
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Quiet unhurried mountain sounds
+            </li>
+          </ul>
+          <div style="margin-top: auto;">
             <a href="https://wa.me/918903512786?text=Hello%2C%20I%20am%20interested%20in%20visiting%20Luxury%20Farm%20House.%20Could%20you%20tell%20me%20more%20about%20the%20surroundings%3F" class="btn btn--green" id="btn-service-nature" target="_blank" rel="noopener">
               <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
               Enquire Now
@@ -128,63 +190,82 @@
     </div>
   </section>
 
-  <!-- ========== PROPERTY GALLERY ========== -->
-  <section class="section section--dark" id="services-gallery">
+  <!-- ========== PROPERTY HIGHLIGHTS & GALLERY ========== -->
+  <section class="section section--dark" id="services-highlights">
     <div class="container">
       <div class="text-center reveal" style="margin-bottom: var(--space-3xl);">
-        <p class="label" style="margin-bottom: var(--space-md);">Gallery</p>
-        <h2 class="heading-3">Explore the Property</h2>
-        <div class="divider divider--center" style="margin-top: var(--space-lg);"></div>
+        <p class="label" style="margin-bottom: var(--space-md);">Highlights</p>
+        <h2 class="heading-3">What to Expect During Your Stay</h2>
+        <div class="divider divider--center" style="margin-top: var(--space-lg); margin-bottom: var(--space-2xl);"></div>
       </div>
-      <div class="gallery reveal">
+
+      <!-- Real Resort Gallery -->
+      <div class="gallery reveal" style="margin-bottom: var(--space-3xl);">
         <div class="gallery__item">
-          <img src="about-hero.jpg" alt="Multiple cabins viewed from below showing their elevated architecture" loading="lazy">
+          <img src="original-cabins-panoramic.jpg" alt="Panoramic view of hillside elevated cabins" loading="lazy">
         </div>
         <div class="gallery__item">
-          <img src="cabin-interior.jpg" alt="Cabin interior with panoramic mountain views through large windows" loading="lazy">
+          <img src="original-cabins-valley.jpg" alt="Elevated cabins overlooking the mountain valley" loading="lazy">
         </div>
         <div class="gallery__item">
-          <img src="cabin-balcony.jpg" alt="Cabin balcony with seating and mountain valley views" loading="lazy">
+          <img src="original-cabins-lamps.jpg" alt="Illuminated stone path and evening hillside view" loading="lazy">
         </div>
         <div class="gallery__item">
-          <img src="mountain-landscape.jpg" alt="Breathtaking Poombarai valley panoramic landscape" loading="lazy">
+          <img src="original-mountain-mist-clean.jpg" alt="Atmospheric mountain mist rolling over Poombarai" loading="lazy">
         </div>
-        <div class="gallery__item">
-          <img src="hero-cabins.jpg" alt="Wide aerial view of all elevated cabins on the hillside" loading="lazy">
+      </div>
+
+      <div class="arch-grid reveal">
+        <div class="arch-card">
+          <div class="arch-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2"/></svg>
+          </div>
+          <h3 class="arch-card__title">Morning Cloud Vistas</h3>
+          <p class="arch-card__text">
+            Witness the sea of morning clouds gently drifting through the valley below from your private cabin balcony.
+          </p>
         </div>
-        <div class="gallery__item">
-          <img src="contact-hero.jpg" alt="Cabins illuminated at twilight with misty mountain backdrop" loading="lazy">
+
+        <div class="arch-card">
+          <div class="arch-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+          </div>
+          <h3 class="arch-card__title">Warm Evening Ambience</h3>
+          <p class="arch-card__text">
+            Enjoy scenic lamppost-lit stone pathways and the glowing night view of the cabins nestled peacefully on the hill.
+          </p>
         </div>
-        <div class="gallery__item">
-          <img src="valley-view.jpg" alt="Morning mist over the valley from cabin balcony" loading="lazy">
-        </div>
-        <div class="gallery__item">
-          <img src="nature-trail.jpg" alt="Stone pathway winding through property gardens" loading="lazy">
+
+        <div class="arch-card">
+          <div class="arch-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3 class="arch-card__title">Quiet Mountain Solitude</h3>
+          <p class="arch-card__text">
+            Experience complete calm and serenity with no city noise, only the natural rustle of wind across the slope.
+          </p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- ========== ENQUIRY CTA ========== -->
-  <section class="section" id="services-enquiry">
-    <div class="container">
-      <div class="text-center reveal" style="max-width: 600px; margin: 0 auto;">
-        <p class="label" style="margin-bottom: var(--space-md);">Enquire About Your Stay</p>
-        <h2 class="heading-3">Planning a Visit?</h2>
-        <div class="divider divider--center" style="margin-top: var(--space-lg);"></div>
-        <p class="subtitle mx-auto" style="margin-top: var(--space-lg); text-align: center;">
-          For availability, rates and any questions about the property, reach out to us directly on WhatsApp or give us a call.
-        </p>
-        <div style="margin-top: var(--space-2xl); display: flex; flex-wrap: wrap; gap: var(--space-md); justify-content: center;">
-          <a href="https://wa.me/918903512786?text=Hello%20Luxury%20Farm%20House%2C%20I%20would%20like%20to%20know%20more%20about%20your%20property%20and%20stay%20availability." class="btn btn--whatsapp" id="btn-services-whatsapp" target="_blank" rel="noopener">
-            <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-            Enquire on WhatsApp
-          </a>
-          <a href="tel:+918903512786" class="btn btn--dark" id="btn-services-call">
-            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-            Call Us
-          </a>
-        </div>
+  <section class="cta" id="services-enquiry">
+    <img src="original-cabins-panoramic.jpg" alt="Luxury Farm House hillside cabins" class="cta__image" loading="lazy">
+    <div class="cta__overlay"></div>
+    <div class="cta__content reveal">
+      <p class="label" style="margin-bottom: var(--space-md); color: var(--champagne);">Plan Your Stay</p>
+      <h2 class="cta__title">Ready to Experience the Hillside?</h2>
+      <p class="cta__text">For availability, cabin options and current rates, connect directly with us.</p>
+      <div class="cta__actions">
+        <a href="https://wa.me/918903512786?text=Hello%20Luxury%20Farm%20House%2C%20I%20would%20like%20to%20know%20more%20about%20your%20property%20and%20stay%20availability." class="btn btn--whatsapp" id="btn-services-whatsapp" target="_blank" rel="noopener">
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Enquire on WhatsApp
+        </a>
+        <a href="tel:+918903512786" class="btn btn--outline" id="btn-services-call">
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          Call Us
+        </a>
       </div>
     </div>
   </section>

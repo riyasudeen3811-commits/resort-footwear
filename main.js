@@ -37,26 +37,45 @@ function initMobileNav() {
 
   if (!hamburger || !mobileNav) return;
 
-  hamburger.addEventListener('click', () => {
-    hamburger.classList.toggle('active');
-    mobileNav.classList.toggle('open');
-    document.body.style.overflow = mobileNav.classList.contains('open') ? 'hidden' : '';
+  function openNav() {
+    hamburger.classList.add('active');
+    hamburger.setAttribute('aria-expanded', 'true');
+    mobileNav.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeNav() {
+    hamburger.classList.remove('active');
+    hamburger.setAttribute('aria-expanded', 'false');
+    mobileNav.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  hamburger.addEventListener('click', (e) => {
+    e.stopPropagation();
+    const isOpen = mobileNav.classList.contains('open');
+    if (isOpen) {
+      closeNav();
+    } else {
+      openNav();
+    }
   });
 
   mobileLinks.forEach(link => {
-    link.addEventListener('click', () => {
-      hamburger.classList.remove('active');
-      mobileNav.classList.remove('open');
-      document.body.style.overflow = '';
-    });
+    link.addEventListener('click', closeNav);
   });
 
   // Close on Escape
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape' && mobileNav.classList.contains('open')) {
-      hamburger.classList.remove('active');
-      mobileNav.classList.remove('open');
-      document.body.style.overflow = '';
+      closeNav();
+    }
+  });
+
+  // Close when tapping outside the menu on mobile
+  document.addEventListener('click', (e) => {
+    if (mobileNav.classList.contains('open') && !mobileNav.contains(e.target) && !hamburger.contains(e.target)) {
+      closeNav();
     }
   });
 }
@@ -65,6 +84,11 @@ function initMobileNav() {
 function initScrollReveal() {
   const revealElements = document.querySelectorAll('.reveal');
   if (revealElements.length === 0) return;
+
+  if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    revealElements.forEach(el => el.classList.add('visible'));
+    return;
+  }
 
   const observer = new IntersectionObserver(
     (entries) => {
@@ -76,8 +100,8 @@ function initScrollReveal() {
       });
     },
     {
-      threshold: 0.12,
-      rootMargin: '0px 0px -60px 0px'
+      threshold: 0.05,
+      rootMargin: '0px 0px -20px 0px'
     }
   );
 
